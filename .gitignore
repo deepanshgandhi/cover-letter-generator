@@ -1,0 +1,4 @@
+.DS_Store
+.cover-letter-generator/
+.env
+vectorstore/

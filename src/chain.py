@@ -59,25 +59,18 @@ class Chain:
     
     def generate_cover_letter(self, job_description, company_name, experience_list):
         cover_letter_prompt = PromptTemplate.from_template(
-            """Your name is Deepansh Gandhi, and you are currently a Machine Learning Intern at Staples while pursuing a Masters 
-            in Artificial Intelligence at Northeastern University. Using the job description provided below, write a tailored cover letter 
-            for the company. Make the tone professional, yet enthusiastic, showcasing how your experience aligns with the job requirements.
+            """Your name is Deepansh Gandhi, and you're a Machine Learning Intern at Staples, pursuing a Master's in Artificial Intelligence at Northeastern University. Based on the job description below, write a concise and tailored cover letter for the company. The letter should be professional yet enthusiastic, highlighting how your skills align with the job requirements. It should be brief, straightforward, and feel personal—not overly polished or AI-generated.
+
+Details:
 
         Job Description: {job_description}
         Company Name: {company_name}
+        Structure:
 
-        Include the following:
-
-        Introduction: Start by expressing your interest in the position and the company, and briefly mention your current role at Staples 
-        and academic background at Northeastern University.
-        Relevant Experience: From your list of past work experiences, highlight the most relevant points that align with the job description 
-        at {company_name}. The experiences provided below should be woven into the narrative naturally, 
-        showcasing how your skills are a direct match for what the company is looking for.
-        Skills & Achievements: Emphasize your technical skills, particularly in machine learning, data processing, and other areas 
-        that are valuable for the role. Mention any standout achievements in your internships or projects, quantifying impact when possible.
-        Company Fit: Convey your understanding of the company's mission and how it resonates with your personal and professional goals.
-        Discuss how you can contribute to their team or how the role fits into your career aspirations.
-        Closing: Reiterate your enthusiasm for the role, express interest in an interview, and thank them for considering your application.
+        Introduction: Start by expressing genuine interest in the role and the company. Briefly mention your current role at Staples and your academic background.
+        Relevant Experience: Highlight the most important aspects of your experience that directly align with the job description. Keep this natural and conversational, avoiding excessive detail.
+        Company Fit: Briefly explain why the company's goals or mission resonate with you and how you see yourself contributing to the team.
+        Closing: Conclude by expressing your enthusiasm for the role, your openness to further discussion in an interview, and appreciation for their time and consideration.
         Experience List: {experience_list}"""
         )
 

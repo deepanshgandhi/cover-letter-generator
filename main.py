@@ -15,11 +15,11 @@ def create_streamlit_app(chain, vector_db):
         job_details = chain.extract_job_details(url_input)
         chroma_query = chain.create_query(url_input)
         job_data = vector_db.search(chroma_query)
-        #st.write(job_data)
-        cover_letter = chain.generate_cover_letter(job_details['job_description'], job_details['company_name'], job_data)
+        cover_letter = chain.generate_cover_letter(job_details[0]['job_description'], job_details[0]['company_name'], job_data)
         st.write(cover_letter)
 
 if __name__ == "__main__":
     chain = Chain(0, os.getenv("GROQ_API_KEY"), os.getenv("MODEL"))
-    vector_db = VectorDB("vectorstore", "job_descriptions")
+    vector_db = VectorDB("vectorstore", "job_description")
+    vector_db.add_data("data/experience.json")
     create_streamlit_app(chain, vector_db)
