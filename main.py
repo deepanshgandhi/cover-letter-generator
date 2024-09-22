@@ -3,6 +3,7 @@ from src.chain import Chain
 from src.vector_db import VectorDB
 import streamlit as st
 from dotenv import load_dotenv
+from langchain_community.document_loaders import WebBaseLoader
 
 load_dotenv()
 
@@ -12,7 +13,9 @@ def create_streamlit_app(chain, vector_db):
     url_input = st.text_input("Enter the URL of the job description page:")
     submit_button = st.button("Submit")
     if submit_button:
-        job_details = chain.extract_job_details(url_input)
+        loader = WebBaseLoader(url_input)
+        page_data = loader.load().pop().page_content
+        job_details = chain.extract_job_details(page_data)
         chroma_query = chain.create_query(url_input)
         job_data = vector_db.search(chroma_query)
         cover_letter = chain.generate_cover_letter(job_details[0]['job_description'], job_details[0]['company_name'], job_data)
