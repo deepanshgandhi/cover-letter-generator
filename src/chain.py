@@ -25,6 +25,7 @@ class Chain:
                 following keys: `role`, `company_name`, `experience`, `skills` and `job_description`,
                 where the job description provides detailed information about the job responsibilities and expectations.
                 Ensure that the role is straightforward.
+                Only use the information which is present in the page.
                 Only return the valid JSON.
                 ### VALID JSON (NO PREAMBLE):    
                 """
