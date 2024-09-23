@@ -22,11 +22,14 @@ def create_streamlit_app():
         loader = WebBaseLoader(url_input)
         page_data = loader.load().pop().page_content
         job_details = st.session_state.chain.extract_job_details(page_data)
-        chroma_query = st.session_state.chain.create_query(url_input)
-        job_data = st.session_state.vector_db.search(chroma_query)
-        #print(st.session_state.vector_db.search_by_company(chroma_query, "Speridian Technologies"))
-        cover_letter = st.session_state.chain.generate_cover_letter(job_details[0]['job_description'], job_details[0]['company_name'], job_data)
-        st.write(cover_letter)
+        if len(job_details) == 0:
+            st.write("Unable to scrape job data from the provided URL.")
+        else:
+            chroma_query = st.session_state.chain.create_query(url_input)
+            job_data = st.session_state.vector_db.search(chroma_query)
+            #print(st.session_state.vector_db.search_by_company(chroma_query, "Speridian Technologies"))
+            cover_letter = st.session_state.chain.generate_cover_letter(job_details[0]['job_description'], job_details[0]['company_name'], job_data)
+            st.write(cover_letter)
 
 if __name__ == "__main__":
     create_streamlit_app()
