@@ -5,11 +5,12 @@ import json
 class VectorDB:
     def __init__(self, chroma_client, collection_name):
         self.chroma_client = chromadb.PersistentClient(chroma_client)
-        try:
+        """try:
             self.collection = self.chroma_client.get_collection(name=collection_name)
             self.chroma_client.delete_collection(name=collection_name)
         except:
             pass
+        """
         self.collection = self.chroma_client.get_or_create_collection(name=collection_name)
 
     def add_data(self, file_path):
@@ -17,6 +18,7 @@ class VectorDB:
             data = json.load(f)
         for job in data:
             for desc in job['responsibilities']:
+                print(desc)
                 self.collection.add(
                     documents=[desc],
                     metadatas={

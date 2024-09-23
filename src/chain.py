@@ -25,6 +25,7 @@ class Chain:
                 following keys: `role`, `company_name`, `experience`, `skills` and `job_description`,
                 where the job description provides detailed information about the job responsibilities and expectations.
                 Ensure that the role is straightforward.
+                Only use the information which is present in the page.
                 Only return the valid JSON.
                 ### VALID JSON (NO PREAMBLE):    
                 """
@@ -59,7 +60,7 @@ class Chain:
     
     def generate_cover_letter(self, job_description, company_name, experience_list):
         cover_letter_prompt = PromptTemplate.from_template(
-            """Your name is Deepansh Gandhi, and you're a Machine Learning Intern at Staples, pursuing a Master's in Artificial Intelligence at Northeastern University. Based on the job description below, write a concise and tailored cover letter for the company. The letter should be professional yet enthusiastic, highlighting how your skills align with the job requirements. It should be brief, straightforward, and feel personal—not overly polished or AI-generated.
+            """Your name is Gibran Myageri, and you're a Software Engineer pursuing a Master's in Computer Science at Northeastern University. Based on the job description below, write a concise and tailored cover letter for the company. The letter should be professional yet enthusiastic, highlighting how your skills align with the job requirements. It should be brief, straightforward, and feel personal—not overly polished or AI-generated.
 
 Details:
 

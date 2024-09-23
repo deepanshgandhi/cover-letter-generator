@@ -1,36 +1,36 @@
 [
-    {
-        "company" : "Staples",
-        "job_title" : "Machine Learning Intern",
-        "responsibilities" : [
-            "Refining the item-matching system by fine-tuning language models to create product embeddings for comparison with competitor websites. Leveraging Azure Data Factory to orchestrate the machine learning pipeline.",
-            "Working on a conversational AI project using Retrieval-Augmented Generation (RAG) to enhance document retrieval, ranking, and answer generation for Staples’ clients.",
-            "Profiled & optimized data manipulation processes, reducing latency by 50% in Staples’ product matching project."
-        ]
-    },
+  {
+    "company": "Cognizant Technology Solutions",
+    "job_title": "Full Stack Engineer",
+    "responsibilities": [
+      "Enhanced the Auto Insurance module on Farmers Insurance website, boosting sales and reach by 9%",
+      "Directed UI development for the new Auto application utilizing Angular 13 and Java Spring Boot, replacing legacy technology thereby achieving a 10% increase in user quote completion.",
+      "Resolved render issues and minimized render time, leading to a 15% performance boost and 20% increase in website traffic",
+      "Revamped outdated build and deployment processes to a streamlined CICD pipeline in Jenkins, boosting productivity by 30%.",
+      "Spearheaded production deployments and monitored for potential disruptions using Jenkins, CloudBees CD and Heroku.",
+      "Conducted interviews for potential candidates, evaluating their proficiency in Java, Angular, and problem-solving skills."
+    ]
+  },
 
-    {
-        "company" : "Speridian Technologies",
-        "job_title" : "System Analyst",
-        "responsibilities" : [
-            "Developed a project management system using Django & TensorFlow for a 50,000-employee workforce.",
-            "Improved project completion rates by 30% with improved real-time analytics for better resource allocation.",
-            "Utilized deep learning & NLP for sentiment analysis to optimize product strategies based on customer insights.",
-            "Enhanced RESTful APIs, cutting response time by 25% for better user experience.",
-            "Optimized machine learning pipelines through batch preprocessing & parallelization, achieving a 20% faster execution."
-        ]
-    },
+  {
+    "company": "Tata Consultancy Services",
+    "job_title": "Software Engineer",
+    "responsibilities": [
+      "Redesigned ABN Amro's intranet banking applications from legacy frameworks to Spring Boot and Angular 9, enhancing user-friendliness and decreasing bankers' customer response time by 30%.",
+      "Engineered and implemented a real-time tracker for cross-border payments within the SWIFT Global Payment Initiative, enhancing speed and clarity in payment information which boosted employee productivity and expedited payment tracking by 40%.",
+      "Facilitated numerous meetings with stakeholders to gather application requirements and present progress updates for feedback.",
+      "Collaborated with cross-functional teams to seamlessly integrate various functionalities into the application.",
+      "Championed the DevOps overhaul by overseeing the migration of the bank’s applications to Microsoft Azure Cloud, resulting in their modernization with Java Spring Boot and Microservices framework for enhanced scalability and cost-efficiency.",
+      "Interviewed, mentored, and trained new recruits, orchestrating knowledge transfer sessions to facilitate their seamless integration."
+    ]
+  },
 
-    {
-        "company" : "vEngage.ai",
-        "job_title" : "Software Developer",
-        "responsibilities" : [
-            "Designed & implemented RESTful APIs using FastAPI framework, integrating with MySQL database server instances. Strengthened API security with OAuth2 Bearer flow, verifying tokens for secure authentication.",
-            "Automated Docker image deployments on AWS EC2 instances with Jenkins, reducing deployment time by 40%.",
-            "Created automated test scripts to replace manual testing, resulting in a 20% reduction in testing time.",
-            "Built an AI-powered chatbot for post-discharge follow-up with patients, increasing patient follow-up by 25%.",
-            "Mentored interns & interviewed software developers as part of the hiring team."
-        ]
-    }
-
+  {
+    "company": "Khoury College of Computer Sciences",
+    "job_title": "Graduate Teaching Assistant",
+    "responsibilities": [
+      "Teaching and mentoring assistant to a cohort of 370 graduate and undergraduate students for the Web Development course, facilitating routine office hours to provide comprehensive support and mentorship in React, Node.js and MongoDB.",
+      "Assessing and grading assignments and exams, ensuring fair evaluation and feedback for progress and performance."
+    ]
+  }
 ]

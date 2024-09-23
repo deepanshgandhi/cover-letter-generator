@@ -2,3 +2,4 @@
 .cover-letter-generator/
 .env
 vectorstore/
+src/__pycache__

@@ -1,5 +1,5 @@
 company_points = {
-    "Staples" : 3,
-    "Speridian Technologies" : 4,
-    "vEngage.ai" : 4
+    "Cognizant Technology Solutions" : 4,
+    "Tata Consultancy Services" : 4,
+    "Khoury College of Computer Sciences" : 3
 }
