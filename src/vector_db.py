@@ -5,6 +5,11 @@ import json
 class VectorDB:
     def __init__(self, chroma_client, collection_name):
         self.chroma_client = chromadb.PersistentClient(chroma_client)
+        try:
+            self.collection = self.chroma_client.get_collection(name=collection_name)
+            self.chroma_client.delete_collection(name=collection_name)
+        except:
+            pass
         self.collection = self.chroma_client.get_or_create_collection(name=collection_name)
 
     def add_data(self, file_path):
@@ -39,3 +44,14 @@ class VectorDB:
                 merged_jobs[company] = job_desc
         merged_jobs_list = [{'company': company, 'job_description': description} for company, description in merged_jobs.items()]
         return merged_jobs_list
+    
+    def search_by_company(self, query, company_name, n_results=2):
+        results = self.collection.query(
+            query_texts=query,
+            where={'company': company_name},
+            n_results=n_results
+        )
+        print(type(results))
+        print(results)
+        return results['documents'][0]
+
