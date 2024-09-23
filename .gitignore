@@ -2,3 +2,6 @@
 .cover-letter-generator/
 .env
 vectorstore/
+.venv/
+config.py
+./data/experience.jsons
