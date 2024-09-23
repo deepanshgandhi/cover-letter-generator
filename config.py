@@ -1,5 +1,6 @@
 company_points = {
-    "Staples" : 3,
-    "Speridian Technologies" : 4,
-    "vEngage.ai" : 4
+    "Natwest Group" : 5,
+    "Dunzo" : 0,
+    "Standard Chartered Bank" : 3,
+    "Webloom Solutions" : 3,
 }

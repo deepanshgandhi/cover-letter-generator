@@ -27,6 +27,7 @@ class Chain:
                 Ensure that the role is straightforward.
                 Only use the information which is present in the page.
                 Only return the valid JSON.
+                It should not be a list. It should be a single JSON object.
                 ### VALID JSON (NO PREAMBLE):    
                 """
         )
@@ -60,7 +61,7 @@ class Chain:
     
     def generate_cover_letter(self, job_description, company_name, experience_list):
         cover_letter_prompt = PromptTemplate.from_template(
-            """Your name is Deepansh Gandhi, and you're a Machine Learning Intern at Staples, pursuing a Master's in Artificial Intelligence at Northeastern University. Based on the job description below, write a concise and tailored cover letter for the company. The letter should be professional yet enthusiastic, highlighting how your skills align with the job requirements. It should be brief, straightforward, and feel personal—not overly polished or AI-generated.
+            """Your name is Goutham Yadavalli, pursuing a Master's in Computer Science at Northeastern University. Based on the job description below, write a concise and tailored cover letter for the company. The letter should be professional yet enthusiastic, highlighting how your skills align with the job requirements. It should be brief, straightforward, and feel personal—not overly polished or AI-generated. Use relevant keywords and maintain a pleasant and passionate tone. Include how I am a good fit for the role and keep it within 200 words.
 
 Details:
 
@@ -68,7 +69,7 @@ Details:
         Company Name: {company_name}
         Structure:
 
-        Introduction: Start by expressing genuine interest in the role and the company. Briefly mention your current role at Staples and your academic background.
+        Introduction: Start by expressing genuine interest in the role and the company. Briefly mention your academic background.
         Relevant Experience: Highlight the most important aspects of your experience that directly align with the job description. Keep this natural and conversational, avoiding excessive detail.
         Company Fit: Briefly explain why the company's goals or mission resonate with you and how you see yourself contributing to the team.
         Closing: Conclude by expressing your enthusiasm for the role, your openness to further discussion in an interview, and appreciation for their time and consideration.
