@@ -31,7 +31,6 @@ def create_streamlit_app():
             chroma_query = st.session_state.chain.create_query(page_data)
             job_data = st.session_state.vector_db.search(chroma_query)
             #print(st.session_state.vector_db.search_by_company(chroma_query, "Speridian Technologies"))
-            print("Job data: ", job_details)
             cover_letter = st.session_state.chain.generate_cover_letter(job_details['role'], job_details['job_description'], job_details['company_name'], job_data)
             st.write(cover_letter)
 
