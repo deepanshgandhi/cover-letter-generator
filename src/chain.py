@@ -37,13 +37,15 @@ class Chain:
         chroma_query = chain_extract.invoke(input={'page_content':page_content})
         return chroma_query.content
     
-    def generate_cover_letter(self, job_description, company_name, experience_list):
+    def generate_cover_letter(self, job_title, job_description, company_name, experience_list):
         cover_letter_prompt = PromptTemplate.from_template(
             generate_cover_letter_prompt
         )
 
         chain_email = cover_letter_prompt | self.llm
-        res = chain_email.invoke({"job_description": job_description,
+        res = chain_email.invoke({
+        "job_title": job_title,
+        "job_description": job_description,
         "company_name": company_name,
         "experience_list" : experience_list
         }

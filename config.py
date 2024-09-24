@@ -35,7 +35,7 @@ create_chromadb_query_prompt = """
 generate_cover_letter_prompt = """Your name is Deepansh Gandhi, a Machine Learning Intern at Staples while pursuing a Master’s in Artificial Intelligence at Northeastern University. Based on the job description below, write a concise and tailored cover letter for the company. The letter should be professional yet enthusiastic, highlighting how your skills align with the job requirements. Aim for a brief, straightforward tone that feels personal—not overly polished or AI-generated. Use relevant keywords and maintain a warm, passionate tone. Clearly illustrate why you are a good fit for the role.
 
 Details:
-
+        Job Title: {job_title}
         Job Description: {job_description}
         Company Name: {company_name}
         Structure:
