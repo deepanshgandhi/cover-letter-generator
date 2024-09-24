@@ -43,6 +43,18 @@
             "Created and optimized a web scraping system using Python and deployed it on AWS Lambda, reducing price-check times for users by automating processes.",
             "Designed REST APIs that processed over 1,000 daily requests, improving data retrieval speed and user experience."
         ]
+    },
+    {
+        "type" : "Work Experience",
+        "company" : "vEngage.ai",
+        "job_title" : "Software Developer",
+        "responsibilities" : [
+            "Designed & implemented RESTful APIs using FastAPI framework, integrating with MySQL database server instances. Strengthened API security with OAuth2 Bearer flow, verifying tokens for secure authentication.",
+            "Automated Docker image deployments on AWS EC2 instances with Jenkins, reducing deployment time by 40%.",
+            "Created automated test scripts to replace manual testing, resulting in a 20% reduction in testing time.",
+            "Built an AI-powered chatbot for post-discharge follow-up with patients, increasing patient follow-up by 25%.",
+            "Mentored interns & interviewed software developers as part of the hiring team."
+        ]
     }
 
 ]
