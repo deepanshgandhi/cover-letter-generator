@@ -5,3 +5,4 @@ vectorstore/
 .venv/
 config.py
 ./data/experience.jsons
+src/__pycache__
