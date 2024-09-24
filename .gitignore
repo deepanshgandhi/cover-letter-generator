@@ -6,4 +6,4 @@ vectorstore/
 .venv/
 config.py
 data/experience.json
-./src/__pycache__/               
+src/__pycache__/               
