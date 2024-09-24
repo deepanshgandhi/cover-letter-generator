@@ -1,51 +1,27 @@
 [
     {
-        "company" : "Natwest Group",
-        "job_title" : "Data Engineer",
+        "company" : "Staples",
+        "job_title" : "Machine Learning Intern",
         "responsibilities" : [
-            "Developed ETL driver code in Python using PySpark, enabling the team to automate data transformation processes, which reduced manual intervention and improved pipeline runtimes by 20%.",
-            "Migrated a manual data pipeline to an automated Apache Airflow workflow, reducing processing time by 50% and increasing overall pipeline reliability",
-            "Collaborated with business teams to understand data requirements and definitions, leading to a 15% improvement in data accuracy for reporting and analytics",
-            "Managed AWS infrastructure (EC2, EMR, S3, Athena) for data processing, enabling seamless scalability and reducing infrastructure costs by 10% through optimization.",
-            "Wrote SQL transformation code for multiple datasets, improving query performance and supporting the efficient integration of business-critical data into analytics platforms.",
-            "Part of the Data CoE team focussed on Risk Model Analytics Data",
-            "Designed and developed complex queries, automation frameworks and worked on data pipelines to facilitate extraction and transformation of large volumes of risk reporting data on AWS platform",
-            "Designed robust and dynamic data pipelines that are on-demand, on containerized spark clusters - with ability to concurrently run multiple upstreams - facilitating delivery of data as a product and fulfilling regulatory model data requirements with an 80% improvement in performance ",
-            "Worked as a technology counterpart with business/financial analysts, risk modellers and assisted in analyzing risk data, data curation and programming solutions",
-            "Worked on analyzing and facilitating AWS cloud infrastructure requirements, performance tuning, cost review and developing in-house data analytics utilities"
+            "Refining the item-matching system by fine-tuning language models to create product embeddings for comparison with competitor websites. Leveraging Azure Data Factory to orchestrate the machine learning pipeline.",
+            "Working on a conversational AI project using Retrieval-Augmented Generation (RAG) to enhance document retrieval, ranking, and answer generation for Staples’ clients.",
+            "Profiled & optimized data manipulation processes, reducing latency by 50% in Staples’ product matching project."
         ]
     },
 
     {
-        "company" : "Dunzo",
-        "job_title" : "SDET Intern",
+        "company" : "Speridian Technologies",
+        "job_title" : "System Analyst",
         "responsibilities" : [
-            "Increased backend test coverage using Selenium and JUnit, leading to a 20% reduction in production bugs.",
-            "Implemented automated tests for a new platform using TestNG, reducing manual testing time and enhancing reliability."
+            "Developed a project management system using Django & TensorFlow for a 50,000-employee workforce.",
+            "Improved project completion rates by 30% with improved real-time analytics for better resource allocation.",
+            "Utilized deep learning & NLP for sentiment analysis to optimize product strategies based on customer insights.",
+            "Enhanced RESTful APIs, cutting response time by 25% for better user experience.",
+            "Optimized machine learning pipelines through batch preprocessing & parallelization, achieving a 20% faster execution."
         ]
     },
 
     {
-        "company" : "Standard Chartered Bank",
-        "job_title" : "Software Developer Intern",
-        "responsibilities" : [
-            "Developed an orchestration tool from scratch using Flask and SQLAlchemy, reducing human error and doubling team productivity",
-            "Built a RESTful API with Flask, handling up to 10,000 daily requests with minimal latency.",
-            "Improved job scheduling performance with Celery and RabbitMQ, supporting the smooth operation of critical systems."
-        ]
-    },
-
-    {
-        "company": "Webloom Solutions",
-        "job_title": "Backend Developer Intern",
-        "responsibilities":[
-            "Developed backend systems using Django for a Chrome extension that tracked product prices.",
-            "Created and optimized a web scraping system using Python and deployed it on AWS Lambda, reducing price-check times for users by automating processes.",
-            "Designed REST APIs that processed over 1,000 daily requests, improving data retrieval speed and user experience."
-        ]
-    },
-    {
-        "type" : "Work Experience",
         "company" : "vEngage.ai",
         "job_title" : "Software Developer",
         "responsibilities" : [
