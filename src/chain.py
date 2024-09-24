@@ -27,6 +27,7 @@ class Chain:
                 Ensure that the role is straightforward.
                 Only use the information which is present in the page.
                 Only return the valid JSON.
+                It should not be a list. It should be a single JSON object.
                 ### VALID JSON (NO PREAMBLE):    
                 """
         )
@@ -68,7 +69,7 @@ Details:
         Company Name: {company_name}
         Structure:
 
-        Introduction: Start by expressing genuine interest in the role and the company. Briefly mention your current role at Staples and your academic background.
+        Introduction: Start by expressing genuine interest in the role and the company. Briefly mention your academic background.
         Relevant Experience: Highlight the most important aspects of your experience that directly align with the job description. Keep this natural and conversational, avoiding excessive detail.
         Company Fit: Briefly explain why the company's goals or mission resonate with you and how you see yourself contributing to the team.
         Closing: Conclude by expressing your enthusiasm for the role, your openness to further discussion in an interview, and appreciation for their time and consideration.
