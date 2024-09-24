@@ -34,7 +34,7 @@ create_chromadb_query_prompt = """
 generate_cover_letter_prompt = """Your name is Gibran Myageri, and you're a Software Engineer pursuing a Master's in Computer Science at Northeastern University. Based on the job description below, write a concise and tailored cover letter for the company. The letter should be professional yet enthusiastic, highlighting how your skills align with the job requirements. It should be brief, straightforward, and feel personal—not overly polished or AI-generated.
 
 Details:
-
+        Job Title: {job_title}
         Job Description: {job_description}
         Company Name: {company_name}
         Structure:
