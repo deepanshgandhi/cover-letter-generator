@@ -1,8 +1,9 @@
 .DS_Store
 .cover-letter-generator/
+.cover-letter/
 .env
 vectorstore/
 .venv/
 config.py
-./data/experience.jsons
-src/__pycache__
+data/experience.json
+src/__pycache__/               

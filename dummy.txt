@@ -1,0 +1,56 @@
+Your name is Gibran Myageri, and you're a Software Engineer pursuing a Master's in Computer Science at Northeastern University. Based on the job description below, write a concise and tailored cover letter for the company. The letter should be professional yet enthusiastic, highlighting how your skills align with the job requirements. It should be brief, straightforward, and feel personal—not overly polished or AI-generated.
+
+Details:
+
+        Job Description: {job_description}
+        Company Name: {company_name}
+        Structure:
+
+        Introduction: Start by expressing genuine interest in the role and the company. Briefly mention your academic background.
+        Relevant Experience: Highlight the most important aspects of your experience that directly align with the job description. Keep this natural and conversational, avoiding excessive detail.
+        Company Fit: Briefly explain why the company's goals or mission resonate with you and how you see yourself contributing to the team.
+        Closing: Conclude by expressing your enthusiasm for the role, your openness to further discussion in an interview, and appreciation for their time and consideration.
+        Experience List: {experience_list}
+
+
+[
+  {
+    "company": "Cognizant Technology Solutions",
+    "job_title": "Full Stack Engineer",
+    "responsibilities": [
+      "Enhanced the Auto Insurance module on Farmers Insurance website, boosting sales and reach by 9%",
+      "Directed UI development for the new Auto application utilizing Angular 13 and Java Spring Boot, replacing legacy technology thereby achieving a 10% increase in user quote completion.",
+      "Resolved render issues and minimized render time, leading to a 15% performance boost and 20% increase in website traffic",
+      "Revamped outdated build and deployment processes to a streamlined CICD pipeline in Jenkins, boosting productivity by 30%.",
+      "Spearheaded production deployments and monitored for potential disruptions using Jenkins, CloudBees CD and Heroku.",
+      "Conducted interviews for potential candidates, evaluating their proficiency in Java, Angular, and problem-solving skills."
+    ]
+  },
+
+  {
+    "company": "Tata Consultancy Services",
+    "job_title": "Software Engineer",
+    "responsibilities": [
+      "Redesigned ABN Amro's intranet banking applications from legacy frameworks to Spring Boot and Angular 9, enhancing user-friendliness and decreasing bankers' customer response time by 30%.",
+      "Engineered and implemented a real-time tracker for cross-border payments within the SWIFT Global Payment Initiative, enhancing speed and clarity in payment information which boosted employee productivity and expedited payment tracking by 40%.",
+      "Facilitated numerous meetings with stakeholders to gather application requirements and present progress updates for feedback.",
+      "Collaborated with cross-functional teams to seamlessly integrate various functionalities into the application.",
+      "Championed the DevOps overhaul by overseeing the migration of the bank’s applications to Microsoft Azure Cloud, resulting in their modernization with Java Spring Boot and Microservices framework for enhanced scalability and cost-efficiency.",
+      "Interviewed, mentored, and trained new recruits, orchestrating knowledge transfer sessions to facilitate their seamless integration."
+    ]
+  },
+
+  {
+    "company": "Khoury College of Computer Sciences",
+    "job_title": "Graduate Teaching Assistant",
+    "responsibilities": [
+      "Teaching and mentoring assistant to a cohort of 370 graduate and undergraduate students for the Web Development course, facilitating routine office hours to provide comprehensive support and mentorship in React, Node.js and MongoDB.",
+      "Assessing and grading assignments and exams, ensuring fair evaluation and feedback for progress and performance."
+    ]
+  }
+]
+
+
+Cognizant Technology Solutions" : 4,
+    "Tata Consultancy Services" : 4,
+    "Khoury College of Computer Sciences" : 3
