@@ -5,7 +5,7 @@
         "responsibilities" : [
             "Refining the item-matching system by fine-tuning language models to create product embeddings for comparison with competitor websites. Leveraging Azure Data Factory to orchestrate the machine learning pipeline.",
             "Working on a conversational AI project using Retrieval-Augmented Generation (RAG) to enhance document retrieval, ranking, and answer generation for Staples’ clients.",
-            "Profiled & optimized data manipulation processes, reducing latency by 50% in Staples’ product matching project."
+            "Profiled & optim data manipulation processes, reducing latency by 50% in Staples’ product matching project."
         ]
     },
 
