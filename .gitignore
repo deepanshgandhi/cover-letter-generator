@@ -8,3 +8,4 @@ config.py
 data/experience.json
 src/__pycache__/               
 .venv/
+__pycache__/
