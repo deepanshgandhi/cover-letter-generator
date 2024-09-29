@@ -45,3 +45,34 @@ Details:
         Company Fit: Briefly explain why the company's goals or mission resonate with you and how you see yourself contributing to the team.
         Closing: Conclude by expressing your enthusiasm for the role, your openness to further discussion in an interview, and appreciation for their time and consideration.
         Experience List: {experience_list}"""
+
+generate_resume_points_prompt = """ 
+                                    I am applying for the position of {job_title} at {company_name}. Below are the key responsibilities and qualifications mentioned in the job description. I have also provided a summary of my past experiences. Please review both and generate 3-5 bullet points for each experience that are most relevant to the job description. Make sure these points emphasize the key skills, technologies, and accomplishments related to the role.
+
+                                    Job Description: {job_description}
+                                    
+                                    My past experiences : {experience_list}
+
+                                    Instructions: Based on the job description and my experiences, generate concise bullet points under each experience that are tailored to match the responsibilities and qualifications of the job. Focus on the overlap between the skills and technologies mentioned in the job description and the work I’ve done in the past.
+
+                                    Only use the information which is provided.
+                                    Only return the valid JSON.
+                                    It should not be a list. It should be a single JSON object.
+
+                                    Return it in the following format:
+                                    {{"experiences" : [
+                                        {{
+                                            "company": "Company Name 1",
+                                            "job_description": ["Responsibility 1", "Responsibility 2", "Responsibility 3"],
+                                            "job_title": "Job Title",
+                                            "location": "Location"
+                                        }},
+                                        {{
+                                            "company": "Company Name 2",
+                                            "job_description": ["Responsibility 1", "Responsibility 2", "Responsibility 3"],
+                                            "job_title": "Job Title",
+                                            "location": "Location"
+                                        }}
+                                    ]}}
+                                    ### VALID JSON (NO PREAMBLE):     
+                                """

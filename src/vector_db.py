@@ -118,3 +118,39 @@ class VectorDB:
         )
         return results['documents'][0]
 
+    # Add all of the responsibilities at an experience as a single entry in the chroma db by adding \n between the responsibilities.
+    def add_data_resume(self, file_path):
+        with open(file_path) as f:
+            data = json.load(f)
+
+        for job in data:
+            responsibilities = ''
+            for r in job['responsibilities']:
+                responsibilities += r + '\n'
+            self.collection.add(
+                documents=[responsibilities],
+                metadatas={
+                    'company': job['company'],
+                    'job_title': job['job_title'],
+                    'project': job['project'],
+                    'location': job['location']
+                },
+                ids=[str(uuid.uuid4())]
+            )
+
+    def search_resume(self, query, n_results=10):
+        results = self.collection.query(query_texts=query, n_results=n_results)
+        documents = results['documents'][0]
+        metadata = results['metadatas'][0]
+        job_experience = []
+        for i in range(len(documents)):
+            job_experience.append({
+                'company': metadata[i]['company'],
+                'job_description': documents[i],
+                'job_title': metadata[i]['job_title'],
+                'project': metadata[i]['project'],
+                'location': metadata[i]['location']
+                })
+        
+        return job_experience
+
