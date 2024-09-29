@@ -20,12 +20,15 @@ def convert_to_latex(resume_points):
         latex_string += "\\WorkExperience\n"
         latex_string += "{" + point['company'] + "}\n"
         latex_string += "{" + point['job_title'] + "}\n"
+        latex_string += "{" + point['location'] + "}\n"
+        latex_string += "{ }\n"
         latex_string += "{\n"
-        latex_string += "\\vpsace{-1pt}\n"
+        minus_1 = -1
         # latex_string += "{" + point['location'] + "}\n"
+        
         # latex_string += "{\n"
         for desc in point['job_description']:
-            latex_string += "    \\item " + desc + "\n"
+            latex_string += "    \\item " + desc + "\n\n"
         latex_string += "}\n"
         latex_string += "\\vspace{2pt}\n"
 
