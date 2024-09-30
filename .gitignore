@@ -6,4 +6,7 @@ vectorstore/
 .venv/
 config.py
 data/experience.json
+data/resume.tex
 src/__pycache__/               
+.vscode
+__pycache__

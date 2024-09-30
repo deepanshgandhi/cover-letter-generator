@@ -44,3 +44,10 @@ Details:
         Company Fit: Briefly explain why the company's goals or mission resonate with you and how you see yourself contributing to the team.
         Closing: Conclude by expressing your enthusiasm for the role, your openness to further discussion in an interview, and appreciation for their time and consideration.
         Experience List: {experience_list}"""
+        
+generate_resume_prompt = """Your name is Gibran Myageri. Given is your resume in latex form. Using the information in the job description, edit the work experience section so that it has information relevant to the job description.
+Follow the structure of the resume. Do not use any information other than what is in the job description. Return the entire resume in latex format, with the updated work experience section. Do not return anything else other than the latex code.
+{resume}
+{experience_list}
+{job_description}
+"""

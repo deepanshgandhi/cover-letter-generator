@@ -2,7 +2,7 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.exceptions import OutputParserException
-from config import job_detail_prompt, create_chromadb_query_prompt, generate_cover_letter_prompt
+from config import job_detail_prompt, create_chromadb_query_prompt, generate_cover_letter_prompt, generate_resume_prompt
 
 class Chain:
     def __init__(self, temperature, groq_api_key, model_name):
@@ -48,6 +48,23 @@ class Chain:
         "job_description": job_description,
         "company_name": company_name,
         "experience_list" : experience_list
+        }
+        )
+        return res.content
+    
+    def generate_resume(self, experience_list, job_description):
+        with open('data/resume.tex', 'r') as f:
+            resume = f.read()
+        
+        resume_prompt = PromptTemplate.from_template(
+            generate_resume_prompt
+        )
+
+        chain_email = resume_prompt | self.llm
+        res = chain_email.invoke({
+        "resume": resume,
+        "experience_list" : experience_list,
+        "job_description": job_description
         }
         )
         return res.content

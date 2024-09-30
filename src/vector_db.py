@@ -1,6 +1,7 @@
 import chromadb
 import uuid
 import json
+from IPython import embed
 
 class VectorDB:
     def __init__(self, chroma_client, collection_name):
@@ -85,20 +86,23 @@ class VectorDB:
 
 
 
-    def search(self, query, n_results=10):
+    def search(self, query, n_results=2):
         results = self.collection.query(query_texts=query, n_results=n_results)
+        print('\n results: ', results)
         documents = results['documents'][0]
         metadata = results['metadatas'][0]
         job_experience = []
         for i in range(len(documents)):
+            print("\n metadata: ", metadata[i], end="\n\n")
             job_experience.append({
                 'company': metadata[i]['company'],
                 'job_description': documents[i],
                 'job_title': metadata[i]['job_title'],
-                'project': metadata[i]['project'],
+                'project': metadata[i]['project'] or "",
                 'location': metadata[i]['location']
                 })
         merged_jobs = {}
+        print('job experience: ', job_experience)
         merged_jobs_list = self.merge_data(job_experience)
         # for job in job_experience:
         #     company = job['company']
